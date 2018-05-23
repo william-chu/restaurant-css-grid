@@ -1,7 +1,13 @@
+html {
+  background: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+
+}
+
 body {
   height: 100%;
-  background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
   min-width: 700px;
+  margin: 0;
 }
 
 h1, h2, h3 {
@@ -21,35 +27,26 @@ h2 {
 .header {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 
 .banner {
   display: grid;
-  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: repeat(14, 50px);
+  grid-template-rows: repeat(7, 100px);
 }
 
-.red-triangle {
-  grid-row-start: 2;
-  grid-column-start: 11;
-	width: 0;
-	height: 0;
-	border-top: 90px solid transparent;
-	border-right: 160px solid rgb(236, 9, 40);
-	border-bottom: 90px solid transparent;
-  transform: rotate(-40deg);
+.yelp {
+  grid-row-start: 6;
+  grid-column-start: 10;
+  z-index: 2;
 }
 
-.red-triangle img {
+.yelp img {
   width: 150px;
-  transform: rotate(40deg);
-  position: absolute;
-  top: -57px;
-  left: 34px;
 }
 
-.green-circle {
+.big-circle {
   grid-row-start: 0;
   grid-column-start: 0;
   display: flex;
@@ -60,10 +57,10 @@ h2 {
   margin: 0;
   background-image: linear-gradient(to bottom, #243949 0%, #517fa4 100%);
   border-radius: 50%;
-  z-index: 0;
+  z-index: 2;
 }
 
-.green-circle h1 {
+.big-circle h1 {
   font-size: 100px;
   color: rgba(255, 224, 156);
   text-shadow: 2px 2px black;
@@ -81,7 +78,7 @@ h2 {
   margin: 0;
   background: rgba(255, 224, 156, 0.90);
   border-radius: 50%;
-  z-index: 1;
+  z-index: 2;
 }
 
 .banner-image {
@@ -89,11 +86,12 @@ h2 {
   grid-column-start: 3;
   width: 500px;
   border-radius: 50%;
+  z-index: 1;
 }
 
 .yellow-rectangle {
-  grid-row-start: 6;
-  grid-column-start: 11;
+  grid-row-start: 3;
+  grid-column-start: 12;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -110,7 +108,7 @@ h2 {
   background: rgba(255, 224, 156, 0.90);
   -webkit-transform: skewX(-20deg);
   transform: skewX(-20deg);
-  z-index: 1;
+  z-index: 2;
 }
 
 .yellow-rectangle h2, .yellow-rectangle h3 {
@@ -127,10 +125,9 @@ h2 {
   width: 260px;
   height: 170px;
   padding-left: 15px;
-  border: 2px dotted #253b4b;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .menu-section {
@@ -143,8 +140,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 2px dotted #253b4b;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 5px;
   padding: 0 25px 20px;
   margin-bottom: 100px;
