@@ -1,10 +1,16 @@
 body {
-  height: 100vh;
-  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  height: 100%;
+  background-image: linear-gradient(to bottom, #d7d2cc 0%, #304352 100%);
+  min-width: 700px;
 }
 
 h1, h2, h3 {
   font-family: 'Unica One', Helvetica, Verdana, sans-serif;
+  margin: 0;
+}
+
+p {
+  font-family: Helvetica, Verdana, sans-serif;
   margin: 0;
 }
 
@@ -30,9 +36,17 @@ h2 {
 	width: 0;
 	height: 0;
 	border-top: 90px solid transparent;
-	border-right: 160px solid rgb(232, 64, 55, .95);
+	border-right: 160px solid rgb(236, 9, 40);
 	border-bottom: 90px solid transparent;
   transform: rotate(-40deg);
+}
+
+.red-triangle img {
+  width: 150px;
+  transform: rotate(40deg);
+  position: absolute;
+  top: -57px;
+  left: 34px;
 }
 
 .green-circle {
@@ -44,9 +58,15 @@ h2 {
   width: 250px;
   height: 250px;
   margin: 0;
-  background: rgba(89, 168, 5, 0.9);
+  background-image: linear-gradient(to bottom, #243949 0%, #517fa4 100%);
   border-radius: 50%;
   z-index: 0;
+}
+
+.green-circle h1 {
+  font-size: 100px;
+  color: rgba(255, 224, 156);
+  text-shadow: 2px 2px black;
 }
 
 .yellow-circle {
@@ -59,13 +79,9 @@ h2 {
   width: 125px;
   height: 125px;
   margin: 0;
-  background: rgba(248, 185, 37, 0.95);
+  background: rgba(255, 224, 156, 0.90);
   border-radius: 50%;
   z-index: 1;
-}
-
-.green-circle h1 {
-  font-size: 100px;
 }
 
 .banner-image {
@@ -91,7 +107,7 @@ h2 {
   color: rgba(0,0,0,1);
   -o-text-overflow: clip;
   text-overflow: clip;
-  background: rgba(248, 185, 37, 0.95);
+  background: rgba(255, 224, 156, 0.90);
   -webkit-transform: skewX(-20deg);
   transform: skewX(-20deg);
   z-index: 1;
@@ -111,7 +127,44 @@ h2 {
   width: 260px;
   height: 170px;
   padding-left: 15px;
+  border: 2px dotted #253b4b;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
   z-index: -1;
+}
+
+.menu-section {
+  display: block;
+  width: 900px;
+  margin: auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px dotted #253b4b;
+  border-radius: 5px;
+  padding: 0 25px 20px;
+  margin-bottom: 100px;
+  min-width: 700px;
+  max-width: 900px;
+}
+
+.menu h1 {
+  font-size: 36px;
+  margin: 20px 0 0;
+}
+
+.menu h2 {
+  margin-top: 10px;
+}
+
+.menu h3 {
+  margin: 10px 0;
+}
+
+.starters {
+  padding-right: 50px;
 }
