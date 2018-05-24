@@ -1,8 +1,10 @@
-# **[Project Name]**
+# **KALA Noodle & Grill Clone**
 
 #### By William Chu
 
 ## Description
+
+Mock site for Portland-based Thai restaurant created using CSS Grid.
 
 ## Specifications
 
@@ -12,7 +14,7 @@
 
 ## Setup/Installation Requirements
 
-* To view project code, _clone repository from_ https://github.com/william-chu/Project
+* To view project code, _clone repository from_ https://github.com/william-chu/restaurant-css-grid
 * Install Node.js
 * Open terminal, navigate to project root folder and run npm install
 * To bundle and build project distribution folder, run npm run build
@@ -23,9 +25,7 @@
 
 ## Technologies Used
 
-* HTML
-* CSS _(Bootstrap 4.1)_
-* JavaScript _(jQuery 3.2.1)_
+* CSS _(Grid and Flexbox)_
 * Node.js
 * Webpack
 * ESLint
