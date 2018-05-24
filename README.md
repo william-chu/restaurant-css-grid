@@ -1,10 +1,10 @@
-# **KALA Noodle & Grill Clone**
+# **Restaurant CSS Grid Site**
 
 #### By William Chu
 
 ## Description
 
-Mock site for Portland-based Thai restaurant created using CSS Grid.
+Mock web page for Portland-based Thai restaurant created using CSS Grid.
 
 ## Specifications
 
